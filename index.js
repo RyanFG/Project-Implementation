@@ -25,7 +25,8 @@ function checkBooking1FilledOut(){
     const time = document.querySelector("#time");
     const ampm = document.querySelector("#ampm");
 
-    if(petName == "" || petType == "Select Type" || service == "Select Service" || staff == "Select Staff" || date == "yyyy-mm-dd" || time == "Select Time" || ampm == "Select Type"){
+    if(petName == "" || petType == "Select Type" || service == "Select Service" || staff == "Select Staff" || 
+    date == "yyyy-mm-dd" || time == "Select Time" || ampm == "Select Type"){
         return false;
     }else{
         return true;
