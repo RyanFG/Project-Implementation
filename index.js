@@ -1,7 +1,7 @@
 const alertContainer = document.getElementById("alertContainer");
 
 function checkBooking1(){
-    const booking = document.getElementById("book");
+    const booking = document.querySelector("#booking1");
 
     booking.addEventListener("button1",function(event){
         event.preventDefault();
