@@ -72,15 +72,15 @@
                 <r>Address:45 Louis Pastuer Private &nbsp&nbsp&nbsp Hours: 8am-8pm Mon-Fri &nbsp&nbsp&nbsp 613-613-6136</r>
             </div>
 
-            
+            <div id="alertContainer"></div>
  
             <form style="position:relative; top:65px; padding-left: 50px; padding-right: 350px;">
                 <h1>Pet Information</h1>
-                <label>Pet Name</label>
+                <label for="pet_name">Pet Name</label>
                 <input type="text" name="name" value="">
                 <br><br>
                 
-                <label>Pet Type</label>
+                <label for="pet_type">Pet Type</label>
                 <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                     <option selected>Select Type</option>
                     <option value="1">Cat</option>
@@ -88,7 +88,7 @@
                     <option value="3">Other - Specify in notes</option>
                 </select>
          
-                <label>Service Required</label>
+                <label for="service">Service Required</label>
                 <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                     <option selected>Select Type</option>
                     <option value="1">General Appointment</option>
@@ -101,7 +101,7 @@
                     <option value="8">Other - Specify in notes</option>
                 </select>
 
-                <label>Staff Request</label>
+                <label for="staff">Staff Request</label>
                 <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                     <option selected>Select Staff</option>
                     <option value="1">Paul</option>
@@ -118,11 +118,11 @@
 
                 <h1>Date And Time</h1>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Select Date</label>
+                    <label for="date" class="form-label">Select Date</label>
                     <input type="date">
                 </div>
 
-                <label>Appointment Time</label>
+                <label for="time">Appointment Time</label>
                 <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                     <option selected>Select Time</option>
                     <option value="1">8:00</option>
@@ -136,14 +136,14 @@
                     <option value="9">12:00</option>
                 </select>
 
-                <label>AM/PM</label>
+                <label for="ampm">AM/PM</label>
                 <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                     <option selected>Select Type</option>
                     <option value="1">AM</option>
                     <option value="2">PM</option>
                 </select>
 
-                <a style="font-Size:24px; float:left; position:relative; left:50px;"type="button" class="btn btn-success" href="book2.html">
+                <a style="font-Size:24px; float:left; position:relative; left:50px;"type="button" class="btn btn-success" onclick="checkBooking1()">
                     Next
                 </a>
             </form>
