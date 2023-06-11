@@ -3,7 +3,7 @@ const alertContainer = document.getElementById("alertContainer");
 function checkBooking1(){
     const booking = document.getElementById("book");
 
-    booking.addEventListener("next",function(event){
+    booking.addEventListener("button1",function(event){
         event.preventDefault();
         const check = checkBooking1FilledOut();
         if(check){
@@ -44,3 +44,17 @@ function alert(type, msg){
 
     setTimeout(function() {alertEle.remove();}, 7500);
 }
+
+const booking = document.querySelector("#booking1");
+
+booking.addEventListener("button1",function(event){
+    event.preventDefault();
+    const check = checkBooking1FilledOut();
+    if(check){
+        alert("success","Form succesfully filled out.");
+        window.location.href = "book2.html"; 
+    }
+    else{
+        alert("danger","Please fill out all sections of the form.");
+    }
+});
